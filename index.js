@@ -1,3 +1,4 @@
+
 function mapToNegativize(sourceArray) {
-  sourceArray.map((n) => n * -1);
+  return sourceArray.map((n) => n * -1);
 }
