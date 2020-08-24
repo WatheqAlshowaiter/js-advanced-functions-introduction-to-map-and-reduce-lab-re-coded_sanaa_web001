@@ -41,8 +41,13 @@ function reduceToAllTrue(sourceArray) {
 
 
 function reduceToAnyTrue(sourceArray) {
-  return value = sourceArray.reduce(
+  const value = (value = sourceArray.reduce(
     (accumaltor, value) => accumaltor || value,
     true
-  );
+  ));
+
+  if (value !== false) return true;
+  else {
+    return false;
+  }
 }
