@@ -4,6 +4,6 @@ function mapToNegativize(sourceArray) {
 }
 
 // mapToNoChange returns an array with the original values
-mapToNoChange(sourceArray){
+function mapToNoChange(sourceArray){
     return sourceArray.map((n) => n);
 }
