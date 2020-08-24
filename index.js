@@ -56,9 +56,9 @@ function reduceToAnyTrue(sourceArray) {
   let newValue = sourceArray.reduce((accumaltor, value) => {
     return accumaltor || value;
   }, false);
-  if(newValue != false) {
-      return true
-  }else {
-      return false;
+  if (newValue != false && newValue != null) {
+    return true;
+  } else {
+    return false;
   }
 }
