@@ -50,3 +50,15 @@ function reduceToAnyTrue(sourceArray) {
     return false;
   }
 }
+
+
+function reduceToAnyTrue(sourceArray) {
+  let newValue = sourceArray.reduce((accumaltor, value) => {
+    return accumaltor || value;
+  }, false);
+  if(newValue !== false) {
+      return true
+  }else {
+      return false;
+  }
+}
