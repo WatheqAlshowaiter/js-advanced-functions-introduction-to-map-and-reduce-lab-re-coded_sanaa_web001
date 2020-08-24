@@ -16,8 +16,8 @@ function mapToDouble(sourceArray) {
 }
 
 // mapToSquare returns an array with the original values squared
-function mapToSquare(sourceArray) {
-  return sourceArray.map((n) => n * n);
+function reduceToTotal(sourceArray, startingPoint) {
+  return sourceArray.reduce((total, amount) => total + amount, startingPoint);
 }
 
 function reduceToTotal(sourceArray) {
