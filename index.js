@@ -28,9 +28,8 @@ function reduceToTotal(sourceArray, startingPoint=0) {
     return sourceArray.reduce((total, amount) => total + amount, startingPoint);
   }
   
-  function reduceToAllTrue(sourceArray) {
-  return sourceArray.reduce((accumaltor, value) => accumaltor && value, true);
+function reduceToAllTrue(sourceArray) {
+  const value= sourceArray.reduce((accumaltor, value) => accumaltor && value, true);
+  if(value !== false) return true;
 }
-  
-  
   
