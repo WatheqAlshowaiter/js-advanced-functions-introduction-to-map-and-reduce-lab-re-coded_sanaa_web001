@@ -38,4 +38,11 @@ function reduceToAllTrue(sourceArray) {
       return false;
   }
 }
-  
+
+
+function reduceToAnyTrue(sourceArray) {
+  return value = sourceArray.reduce(
+    (accumaltor, value) => accumaltor || value,
+    true
+  );
+}
