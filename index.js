@@ -20,6 +20,10 @@ function reduceToTotal(sourceArray, startingPoint) {
   return sourceArray.reduce((total, amount) => total + amount, startingPoint);
 }
 
-function reduceToTotal(sourceArray) {
-  return sourceArray.reduce((total, amount) => total + amount, 0);
+function reduceToTotal(sourceArray, startingPoint) {
+  return sourceArray.reduce((total, amount) => total + amount, startingPoint);
 }
+
+function reduceToTotal(sourceArray, startingPoint=0) {
+    return sourceArray.reduce((total, amount) => total + amount, startingPoint);
+  }
