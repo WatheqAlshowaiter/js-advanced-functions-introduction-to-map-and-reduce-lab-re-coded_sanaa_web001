@@ -29,7 +29,13 @@ function reduceToTotal(sourceArray, startingPoint=0) {
   }
   
 function reduceToAllTrue(sourceArray) {
-  const value= sourceArray.reduce((accumaltor, value) => accumaltor && value, true);
-  if(value !== false) return true;
+  const value = sourceArray.reduce(
+    (accumaltor, value) => accumaltor && value,
+    true
+  );
+  if (value !== false) return true;
+  else {
+      return false;
+  }
 }
   
