@@ -27,3 +27,10 @@ function reduceToTotal(sourceArray, startingPoint) {
 function reduceToTotal(sourceArray, startingPoint=0) {
     return sourceArray.reduce((total, amount) => total + amount, startingPoint);
   }
+  
+  function reduceToAllTrue(sourceArray) {
+  return sourceArray.reduce((accumaltor, value) => accumaltor && value, true);
+}
+  
+  
+  
