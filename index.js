@@ -20,7 +20,6 @@ function mapToSquare(sourceArray) {
   return sourceArray.map((n) => n * n);
 }
 
-reduceToTotal(sourceArray,){
-    returns(sourceArray.reduce(sourceArray));
+function reduceToTotal(sourceArray) {
+  return sourceArray.reduce((total, amount) => total + amount);
 }
-
